@@ -36,11 +36,13 @@
 <script setup>
 import { ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
+import { useQuasar } from "quasar";
 
 defineOptions({
   name: "MainLayout",
 });
 
+const $q = useQuasar();
 const linksList = [
   {
     title: "Budgets",
